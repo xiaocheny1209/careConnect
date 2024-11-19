@@ -1,0 +1,44 @@
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #555;
+}
+
+.logout{
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #a09789;
+  border: none;
+}
+
+.logout:hover {
+  color: #555;
+}

@@ -1,0 +1,92 @@
+.ProfilePage {
+  max-width: 800px;
+  background-color: rgb(216, 213, 203) !important;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.ProfilePage-header {
+  margin-bottom: 20px;
+}
+
+.ProfilePage-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ProfilePage-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ProfilePage-details {
+  margin-top: 30px;
+}
+
+.ProfilePage-details h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ProfilePage-details p {
+  margin: 0;
+}
+
+.ProfilePage-appointments {
+  margin-top: 20px;
+}
+
+.ProfilePage-appointments ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ProfilePage-appointments li {
+  margin-bottom: 10px;
+}
+
+.ProfilePage-chat-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3c00a0;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ProfilePage-chat-link:hover {
+  background-color: #3c00a0;
+}
+
+.prescription {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+  flex-basis: 200px; /* adjust as needed */
+}
+
+.value {
+  flex-grow: 1;
+}
+
+.app_container {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 30px;
+}

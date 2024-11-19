@@ -1,0 +1,68 @@
+/* Center the form and set its width */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style the select dropdown */
+.select-field {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.description {
+  margin-left: 530px;
+}
+
+.description-field {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 1130px;
+}
+
+/* Style the button */
+.submit-btn {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Style the status message */
+.status-msg {
+  margin: 1rem 0;
+  color: #0077cc;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the "no appointments found" message */
+.no-appointments {
+  margin: 1rem 0;
+  color: #0077cc;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Style the page heading */
+.page-heading {
+  margin: 2rem 0;
+  text-align: center;
+  color: #0077cc;
+}

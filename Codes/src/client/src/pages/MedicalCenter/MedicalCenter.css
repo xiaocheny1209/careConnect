@@ -1,0 +1,46 @@
+.medical-center {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.doctors-list {
+  margin-top: 20px;
+}
+
+.doctor-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.doctor-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  background-color: rgb(216, 213, 203);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.doctor-box:hover {
+  background-color: #ebebeb;
+}
