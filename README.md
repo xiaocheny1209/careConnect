@@ -46,6 +46,7 @@ Each deliverable corresponds to a major phase in the project’s lifecycle, prov
 To set up CareConnect locally:
 
 1. Clone the repository.
+2. Navigate to the `src/` folder
 2. Install dependencies using:
    ```bash
    npm install
