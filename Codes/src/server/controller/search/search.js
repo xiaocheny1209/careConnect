@@ -14,12 +14,12 @@ async function findCenter(req, res) {
     // Get the latitude and longitude coordinates of the user's input address using the Google Maps Geocoding API
     // API key obtained from Google Cloud
 
-    // const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=AIzaSyBTJzMyDVgEOqvO2IO0mrtlj45aidgfqbU`;
-    // const geocodeResponse = await fetch(geocodeUrl);
-    // const geocodeData = await geocodeResponse.json();
+    const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${process.env.GOOGLE_MAPS_API_KEY}`;
+    const geocodeResponse = await fetch(geocodeUrl);
+    const geocodeData = await geocodeResponse.json();
 
-    // const lat = geocodeData.results[0].geometry.location.lat;
-    // const lng = geocodeData.results[0].geometry.location.lng;
+    const lat = geocodeData.results[0].geometry.location.lat;
+    const lng = geocodeData.results[0].geometry.location.lng;
 
     const query = {
       rating: { $gte: rating },
@@ -28,21 +28,21 @@ async function findCenter(req, res) {
     };
 
     if (services.length > 0) {
-        query.services = { $in: services };
+      query.services = { $in: services };
     }
 
-    // if (distance) {
-    //   query.location = {
-    //     $near: {
-    //       $geometry: {
-    //         type: "Point",
-    //         coordinates: [lng, lat],
-    //       },
-    //       // convert distance from km to meters
-    //       $maxDistance: distance * 1000,
-    //     },
-    //   }
-    // }
+    if (distance) {
+      query.location = {
+        $near: {
+          $geometry: {
+            type: "Point",
+            coordinates: [lng, lat],
+          },
+          // convert distance from km to meters
+          $maxDistance: distance * 1000,
+        },
+      }
+    }
 
     const centers = await MedicalCenter.find(query).exec();
 
