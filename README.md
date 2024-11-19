@@ -1,6 +1,8 @@
 # careConnect
 CareConnect is a secure healthcare platform offering searchable medical centers, real-time consultations, and electronic medical records, with features for appointment management and prescription issuing.
 
+![Alt text](care_thumbnail.png)
+
 ## Features
 
 - **Searchable Medical Centers**: Quickly locate medical centers near you, filter by services, and ratings and prices.
