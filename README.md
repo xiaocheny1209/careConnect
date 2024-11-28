@@ -3,19 +3,21 @@ CareConnect is a secure healthcare platform offering searchable medical centers,
 
 ![Alt text](care_thumbnail.png)
 
-## Features
-
-- **Searchable Medical Centers**: Quickly locate medical centers near you, filter by services, and ratings and prices.
-- **Real-Time Consultations**: Connect with healthcare providers via secure chat for instant consultations.
-- **Electronic Medical Records (EMR)**: Access and update your medical history in a secure, centralized platform, ensuring continuity of care.
-- **Appointment Management**: Book, reschedule, and receive reminders for appointments, reducing administrative hassles.
-- **Prescription Management**: Request, renew, and manage prescriptions electronically, with automatic pharmacy integration for easy pickup or delivery.
-
 ## Technology Stack
 
-- **Frontend**: Developed with React for a responsive user interface.
-- **Backend**: Node.js with Express for scalable API management.
-- **Database**: MongoDB for secure and flexible storage of EMR and other healthcare-related data.
+- **Frontend**: React
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Containerization**: Docker, Docker Compose
+- **Web Server**: Nginx
+
+## Features
+
+- **Searchable Medical Centers**: Patients can quickly locate nearby medical centers, filter by services, ratings and prices.
+- **Real-Time Consultations**: Patients can connect with healthcare providers via secure chat.
+- **Electronic Medical Records**: Doctors and patients can access and update medical history.
+- **Appointment Management**: Healthcare providers can post slots for doctors. Patients can book and reschedule appointments.
+- **Prescription Management**: Doctors can issue e-prescriptions and patienets can manage prescriptions electronically.
 
 ## Project Structure
 The repository is organized as follows:
@@ -43,16 +45,25 @@ Each deliverable corresponds to a major phase in the project’s lifecycle, prov
 
 ## Installation
 
-To set up CareConnect locally:
+To set up CareConnect locally using Docker:
+
+### Prerequisites
+
+- Docker
+- Docker Compose
+
+### Steps to get started with Docker
 
 1. Clone the repository.
-2. Navigate to the `src/` folder
-2. Install dependencies using:
+2. Navigate to the repository directory.
+2. Build and start the application using Docker Compose:
    ```bash
-   npm install
+   docker-compose up --build
    ```
-3. Set up environment variables for database connection, API keys, and authentication.
-4. Start the development server:
+3. Access the application:
+- Frontend will be available at http://localhost:3000.
+- Backend API will be available at http://localhost:5000.
+4. Stop the services:
    ```bash
-   npm start
+   docker-compose down
    ```
